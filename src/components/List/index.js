@@ -20,7 +20,7 @@ export default function Header({ data, listIndex }) {
 
       <ul>
         {data.cards.map((card, index) => {
-          if(card.id != undefined) {
+          if(card) {
             return <Card key={card.id} data={card} listIndex={listIndex} index={index}/>
           }
           
